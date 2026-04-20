@@ -102,21 +102,16 @@ that pedestrians can safely cross the road.
 
 4.1. Method to Be Followed
 
-Since it will not be possible to present our design at full scale, we will first prepare a 3D
-model. For this, we will use the Tinkercad application and take outputs from our 3D printers.
-After the design is ready, we will place our electronic circuits inside it. The system prepared
-for the presentation has two stages. In both systems, the Deneyap Card 1A will be used.
-PIR motion sensors will be installed to determine whether the pedestrian crossing is
-available. If there is a pedestrian, signals will be sent to vehicles via RFID radio frequency
-transmitters. When the RFID receiver modules installed in the vehicles detect this signal,
-and if the speed is above a certain level, the motor driver L298N will reduce the vehicle’s
-speed with data received from the Deneyap Card 1A. The central software infrastructure
-to manage the system will be prepared in Arduino IDE. Tests will be conducted in areas
-such as school fronts and high-traffic pedestrian crossings, and the accuracy of the sensors,
-the response time of the vehicles, and user feedback will be evaluated. After the tests are
-successfully completed, the system will be made widely applicable through cooperation
-with municipalities and traffic management units, thus presenting a smart, sustainable, and
-traffic-friendly solution that enables pedestrians to cross the road safely.
+roject Description
+Since it will not be possible to present our design at full scale, we will first prepare a 3D model. For this, we will use the Tinkercad application and take outputs from our 3D printers. After the design is ready, we will place our electronic circuits inside it. The system prepared for the presentation has two stages. In both systems, the Arduino Uno will be used. PIR motion sensors will be installed to determine whether the pedestrian crossing is available.
+If there is a pedestrian, signals will be sent to vehicles via RFID radio frequency transmitters. When the RFID receiver modules installed in the vehicles detect this signal, and if the speed is above a certain level, the motor driver L298N will reduce the vehicle’s speed with data received from the Arduino Uno.
+The central software infrastructure to manage the system will be prepared in Arduino IDE. Tests will be conducted in areas such as school fronts and high-traffic pedestrian crossings, and the accuracy of the sensors, the response time of the vehicles, and user feedback will be evaluated. After the tests are successfully completed, the system will be made widely applicable through cooperation with municipalities and traffic management units, thus presenting a smart, sustainable, and traffic-friendly solution that enables pedestrians to cross the road safely.
+Technical Summary for 3D Modeling
+• Microcontroller: Arduino Uno (Central Logic)
+• Sensing: PIR Motion Sensor (Pedestrian Detection)
+• Communication: RFID Transmitter/Receiver (Vehicle-to-Infrastructure)
+• Actuation: L298N Motor Driver (Speed Control)
+• Software: C++ via Arduino IDE
 
 4.2. Target Audience
 
